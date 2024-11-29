@@ -1,0 +1,53 @@
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url(playful-tic-tac-toe-free-vector.jpg);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+
+    .board {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      margin: 20px auto;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #f697ee;
+      border: 1px solid #ccc;
+      border-radius: 25%;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+
+    .cell.taken {
+      cursor: not-allowed;
+      color: #f10697;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
